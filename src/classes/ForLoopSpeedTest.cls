@@ -1,6 +1,6 @@
 public class ForLoopSpeedTest {
 	
-	// Scenario 1
+	// Scenario 1 - Standard integer for loop (SLOWEST)
 	// Time = 1.370 seconds
 	public static Account setFieldValue1(Account acc, String newName)
 	{
@@ -11,7 +11,7 @@ public class ForLoopSpeedTest {
 		return acc;
 	}
 
-	// Scenario 2
+	// Scenario 2 - Integer for loop and setting new variable j (FASTER)
 	// Time = 0.727
 	public static Account setFieldValue2(Account acc, String newName)
 	{
@@ -22,7 +22,7 @@ public class ForLoopSpeedTest {
 		return acc;
 	}
 
-	// Scenario 3
+	// Scenario 3 - Integer for loop by setting compare integer before loop (FASTEST)
 	// Time = 0.150 seconds
 	public static Account setFieldValue3(Account acc, String newName)
 	{
@@ -37,7 +37,7 @@ public class ForLoopSpeedTest {
 		return acc;
 	}
 
-	// Scenario 4
+	// Scenario 4 - Standard sObject for loop (MEDIUM)
 	// Time = 0.508 seconds
 	public static Account setFieldValue4(Account acc, String newName)
 	{
@@ -48,7 +48,7 @@ public class ForLoopSpeedTest {
 		return acc;
 	}
 
-	// Scenario 5
+	// Scenario 5 - Standard object for loop but set list before loop (SECOND FASTEST)
 	// Time = 0.251 seconds
 	public static Account setFieldValue5(Account acc, String newName)
 	{
