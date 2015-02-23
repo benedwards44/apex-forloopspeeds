@@ -15,4 +15,4 @@ Demonstrates the most time efficient for loops in Apex
     Integer startTime = Limits.getCPUTime();
     ForLoopSpeedTest.setFieldValue1(accounts[0], 'Test'); // Test loop 1. Change to different method to test different loops
     Integer endTime = Limits.getCPUTime();
-    System.debug('\n\nTime spend was: ' + (endTime - startTime) + '\n\n');
+    System.debug('\n\nTime spent was: ' + (endTime - startTime) + '\n\n');
