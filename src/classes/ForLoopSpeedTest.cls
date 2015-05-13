@@ -26,13 +26,11 @@ public class ForLoopSpeedTest {
 	// Time = 0.150 seconds
 	public static Account setFieldValue3(Account acc, String newName)
 	{
-
-		List<Contact> contacts = acc.Contacts;
-		Integer listSize = contacts.size();
+		Integer listSize = acc.Contacts.size();
 
 		for (Integer i = 0; i < listSize; i++)
 		{
-			contacts[i].FirstName = newName;
+			acc.Contacts[i].FirstName = newName;
 		}
 		return acc;
 	}
